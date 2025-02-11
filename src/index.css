@@ -1,0 +1,16 @@
+/* tailwind link */
+@import "tailwindcss";
+
+body{
+    background-color: #0F112B;
+    /* overflow-x: hidden; */
+     
+}
+
+.student-table{
+    overflow-x: visible;
+}
+
+/* #0F112B;
+    --SecondaryColor: #25245F;
+    --AccedentColor: #AA54A0; */
