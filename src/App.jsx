@@ -1,15 +1,28 @@
 import React from 'react'
 import Side_header from './components/Side&header'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Teachers from "./pages/Teachers";
+import Students from "./pages/Students";
+import Navbar from "./components/Navbar"; // Navigation Bar
 
 const App = () => {
   return (
     <>
-  <Side_header/>
 
-  {/* main */}
+<Router>
 
-  
-  <main class=" w-full  mt-30 md:w-[82%] md:ml-[18%]  md:mt-20">
+<Side_header/>{/* Navigation menu */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/students" element={<Students />} />
+      </Routes>
+      
+    </Router>
+
+    <main class=" w-full  mt-30 md:w-[82%] md:ml-[18%]  md:mt-20">
         
 
         {/* <!-- content --> */}
@@ -304,6 +317,18 @@ const App = () => {
          All copyright &copy qoranCodes
         </footer>
     </main>
+
+
+ 
+ 
+
+  {/* main */}
+
+  
+ 
+
+
+ 
 
 
 

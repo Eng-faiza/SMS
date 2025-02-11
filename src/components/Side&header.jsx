@@ -1,5 +1,6 @@
 import React from 'react'
 import   { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Side_header = () => {
@@ -31,8 +32,15 @@ const Side_header = () => {
         <div class="menus">
             <h1 class="mt-5 text-2xl capitalize mb-6  ">menus</h1>
             <ul class="text-md capitalize pl-3 flex-col space-y-6">
-                <li class="mb-6"> <i class="fa fa-home text-[--AccedentColor] mr-4 " ></i><a href="index.html" class=" text-[--AccedentColor] hover:text-[--AccedentColor]">home</a></li>
-                <li class="mb-6"> <i class="fa fa-user t mr-4" ></i><a href="teachers.html" class="hover:text-[--AccedentColor]">teachers</a></li>
+                <li class="mb-6">
+                    <Link to="/"><i class="fa fa-home text-[--AccedentColor] mr-4 " ></i><a href="index.html" class=" text-[--AccedentColor] hover:text-[--AccedentColor]">home</a></Link>
+                 </li>
+
+                 <li class="mb-6">
+                    <Link to="/teachers"><i class="fa fa-user t mr-4" ></i><a href="teachers.html" class="hover:text-[--AccedentColor]">teachers</a></Link>
+                 </li>
+
+               
                 <li class="mb-6"><i class="fa fa-user-graduate  mr-4" ></i><a href="student.html"  class="hover:text-[--AccedentColor]">students</a></li>
                 <li class="mb-6"><i class="fa fa-clipboard  mr-4" ></i><a href="courses.html"  class="hover:text-[--AccedentColor]">courses</a></li>
                 <li class="mb-6"><i class="fa fa-dollar-sign  mr-4" ></i><a href="fees.html"  class="hover:text-[--AccedentColor]">fees</a></li>
