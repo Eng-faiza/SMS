@@ -39,9 +39,14 @@ const Side_header = () => {
                  <li class="mb-6">
                     <Link to="/teachers"><i class="fa fa-user t mr-4" ></i><a href="teachers.html" class="hover:text-[--AccedentColor]">teachers</a></Link>
                  </li>
+                 <li class="mb-6">
+                    <Link to="/student"><i class="fa fa-user-graduate  mr-4" ></i><a href="student.html"  class="hover:text-[--AccedentColor]">students</a></Link>
+                 </li>
+
+
 
                
-                <li class="mb-6"><i class="fa fa-user-graduate  mr-4" ></i><a href="student.html"  class="hover:text-[--AccedentColor]">students</a></li>
+                
                 <li class="mb-6"><i class="fa fa-clipboard  mr-4" ></i><a href="courses.html"  class="hover:text-[--AccedentColor]">courses</a></li>
                 <li class="mb-6"><i class="fa fa-dollar-sign  mr-4" ></i><a href="fees.html"  class="hover:text-[--AccedentColor]">fees</a></li>
                 <li class="mb-6"><i class="fa fa-calendar-check  mr-4" ></i><a href="#"  class="hover:text-[--AccedentColor]">calender</a></li>
